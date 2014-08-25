@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   use_doorkeeper
+  get '/me', to: 'api/v1/credentials#me'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
