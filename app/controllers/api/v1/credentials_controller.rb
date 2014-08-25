@@ -3,7 +3,7 @@ class Api::V1::CredentialsController < Api::V1::ApiController
   respond_to    :json
 
   def me
-    respond_with current_user
+    respond_with(current_user)
   end
 
 end
